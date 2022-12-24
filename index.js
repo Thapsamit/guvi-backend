@@ -14,7 +14,7 @@ app.get('/',(req,res)=>{
     res.send('Welcome to guvi Assessment')
 })
 const MONGOURL = process.env.MONGO_DB_URL
-const PORT = process.env.port||5235
+const PORT = process.env.PORT||5235
 
 mongoose.set("strictQuery", false);
 mongoose.connect(MONGOURL)
